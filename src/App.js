@@ -49,7 +49,7 @@ export default class App extends Component {
 
     let formData = new FormData();
     formData.append("file", e.target.files[0], this.state.img);
-    let url = "http://localhost:5000/api/analyze/";
+    let url = "https://msclub-form-analyser.web.app/";
     axios
       .post(url, formData, {
         headers: {
